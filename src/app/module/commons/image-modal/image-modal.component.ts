@@ -19,10 +19,9 @@ export class ImageModalComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.fileService.getAll(0, 5).subscribe(
+    this.fileService.getAll(0, 10).subscribe(
       response => {
         this.images = (response.content as Array<EFile>);
-      }
-    );
+      });
   }
 }
