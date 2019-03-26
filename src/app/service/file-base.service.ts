@@ -5,8 +5,12 @@ import {HttpRequestService} from './http-request.service';
   providedIn: 'root'
 })
 export abstract class FileBaseService {
+
   protected http: HttpRequestService;
+
   constructor(private baseInjector: Injector) {
     this.http = this.baseInjector.get(HttpRequestService);
   }
+
+  // hello
 }
