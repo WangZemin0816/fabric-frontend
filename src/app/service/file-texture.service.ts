@@ -25,7 +25,12 @@ export class FileTextureService extends FileBaseService {
 
   public getAll(page: number, size: number) {
     const getAllURL = 'texture/getAll?page=' + page + '&size=' + size;
-    return this.http.get(getAllURL, null);
+    return this.http.get(getAllURL);
+  }
+
+  public get(id: number) {
+    const getAllURL = 'texture/get?id=' + id;
+    return this.http.get(getAllURL);
   }
 
 }

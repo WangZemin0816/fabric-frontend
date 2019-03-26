@@ -1,0 +1,25 @@
+.content-div{
+  display: inline;
+}
+.img-div{
+  text-align: center;
+  width: 25%;
+  height: 150px;
+  float: left;
+  padding: 10px 0 0 0;
+}
+.img-selected-div{
+  text-align: center;
+  width: 25%;
+  height: 150px;
+  float: left;
+  display: inline;
+  border: #20B2AA;
+  border-width: 3px;
+  border-style: dashed;
+  padding: 5px 0 0 0;
+}
+.fab-img{
+  width: 90%;
+  height: 80%;
+}

@@ -38,7 +38,7 @@ export class HttpRequestService {
   }
 
   // get类型的请求
-  public get(relURL: string, data: any): Observable<any> {
+  public get(relURL: string): Observable<any> {
     return this.http.get<any>(this.getAbsUrl(relURL), this.httpOptions);
   }
 

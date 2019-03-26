@@ -28,7 +28,7 @@ export class FilePatternService extends FileBaseService {
 
   public getAll(page: number, size: number) {
     const getAllURL = 'pattern/getAll?page=' + page + '&size=' + size;
-    return this.http.get(getAllURL, null);
+    return this.http.get(getAllURL);
   }
 
 }

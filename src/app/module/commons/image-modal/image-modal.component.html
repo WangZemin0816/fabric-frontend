@@ -1,31 +1,36 @@
-<!-- 按钮触发模态框 -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#selectImgModal">开始演示模态框</button>
-<!-- 选择设计图对话框，需要在网页服务器初始化designImageFileList并放入堆栈值中-->
-<div class="modal fade" id="selectImgModal" tabindex="-1" role="dialog"
-     aria-labelledby="myModalLabel" aria-hidden="false">
+<!-- 按钮：用于打开模态框 -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  打开模态框
+</button>
+
+<!-- 模态框 -->
+<div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">选择图片</h4>
-      </div>
-      <div class="modal-body">
 
-        <li *ngFor="let image of images">
-          <div class="card" style="width:25%">
-            <img class="card-img-top" src="{{this.fileService.getAbsUrl(image.url)}}" alt="Card image" style="width: 100px; height: 100px">
-            <div class="card-body">
-              <p class="card-text">{{image.name}}</p>
-            </div>
-          </div>
-        </li>
+      <!-- 模态框头部 -->
+      <div class="modal-header">
+        <h4 class="modal-title">选择图片</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
+
+      <!-- 模态框主体 -->
+      <div class="modal-body">
+        <div *ngFor="let image of images">
+          <div *ngIf="image==selectedImg" class="img-selected-div">
+            <img class="fab-img" [src]="getImgUrl(image)" (click)="selectImage(image)"/><br/>
+            <label>{{image.name}}</label>
+          </div>
+          <div *ngIf="image!=selectedImg" class="img-div">
+            <img class="fab-img" [src]="getImgUrl(image)" (click)="selectImage(image)"/><br/>
+            <label>{{image.name}}</label>
+          </div>
+        </div>
+      </div>
+      <!-- 模态框底部 -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-default"
-                onClick="hideModelDialog('selectDesignImageModal')">取消
-        </button>
-        <button type="button" class="btn btn-primary"
-                onClick="sureDesignImage()">确定
-        </button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="confirmImage()">提交更改</button>
       </div>
     </div>
   </div>
