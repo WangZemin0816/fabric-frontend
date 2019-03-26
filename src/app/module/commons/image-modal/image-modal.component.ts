@@ -1,24 +1,28 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-
-
-export interface AlertModel {
-  title: string;
-  message: string;
-}
-
+import {Component, Input, OnInit} from '@angular/core';
+import {EFile} from '../../../model/efile';
+import {FileBaseService} from '../../../service/file-base.service';
 
 @Component({
   selector: 'app-image-modal',
   templateUrl: './image-modal.component.html',
   styleUrls: ['./image-modal.component.css']
 })
-export class ImageModalComponent {
-  @ViewChild('modal')
-  private ele: ElementRef;
-  isshow = true;
-  message: string;
+export class ImageModalComponent implements OnInit{
 
-  constructor() {  }
+  images: Array<EFile>;
+
+  @Input() fileService: FileBaseService;
 
 
+  constructor() {
+    this.images = [];
+  }
+
+  ngOnInit() {
+    this.fileService.getAll(0, 5).subscribe(
+      response => {
+        this.images = (response.content as Array<EFile>);
+      }
+    );
+  }
 }

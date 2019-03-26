@@ -22,4 +22,10 @@ export class FileTextureService extends FileBaseService {
         console.log(resp);
       });
   }
+
+  public getAll(page: number, size: number) {
+    const getAllURL = 'texture/getAll?page=' + page + '&size=' + size;
+    return this.http.get(getAllURL, null);
+  }
+
 }

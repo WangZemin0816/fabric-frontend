@@ -12,5 +12,11 @@ export abstract class FileBaseService {
     this.http = this.baseInjector.get(HttpRequestService);
   }
 
+  public getAbsUrl(relUrl: string) {
+    return this.http.getAbsUrl(relUrl);
+  }
+
+  public abstract getAll(page: number, size: number);
+
   // hello11111111111111111111111111111111111111111
 }

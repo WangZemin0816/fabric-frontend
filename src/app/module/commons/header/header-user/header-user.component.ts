@@ -13,8 +13,8 @@ export class HeaderUserComponent implements OnInit {
 
   public username: string;
 
-  constructor(private translate: TranslateService,
-              private usermanage: UserManageService) {
+  constructor(public translate: TranslateService,
+              public usermanage: UserManageService) {
       this.usermanage.getCurrentUser().subscribe(
         response => {
           this.username = (response as User).account;

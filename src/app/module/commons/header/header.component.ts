@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   @Output() routerEvent: EventEmitter<any> = new EventEmitter();
 
-  private currentUser: User;
+  public currentUser: User;
 
 
   constructor(private translate: TranslateService,
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     this.routerEvent.emit(1);
   }
 
-  private headerRouterEvent(url: string) {
+  public headerRouterEvent(url: string) {
     this.routerEvent.emit(url);
   }
 

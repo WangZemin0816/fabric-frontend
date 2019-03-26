@@ -9,8 +9,8 @@ import {HttpRequestService} from '../../../../service/http-request.service';
 })
 export class HeaderLanguageComponent implements OnInit {
 
-  constructor(private translate: TranslateService,
-              private request: HttpRequestService) {
+  constructor(public translate: TranslateService,
+              public request: HttpRequestService) {
     this.translate.addLangs(['en_US']);
     this.translate.use('en_US');
   }

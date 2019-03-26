@@ -49,7 +49,7 @@ export class HttpRequestService {
     return this.http.post<any>(url, formData);
   }
 
-  private getAbsUrl(relURL: string) {
+  public getAbsUrl(relURL: string) {
     return this.baseURL + relURL;
   }
 }

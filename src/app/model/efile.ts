@@ -1,6 +1,6 @@
 import {Base} from './base';
 
-export class EFile extends Base{
+export class EFile extends Base {
   /* 图片地址 */
   url: string;
 
@@ -9,4 +9,6 @@ export class EFile extends Base{
 
   /* 图片名称 */
   name: string;
+
+
 }
