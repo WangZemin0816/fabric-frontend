@@ -1,0 +1,15 @@
+<label>纹理图原始图选取</label><input type="file" (change)="originFileSelect($event)">
+<br/>
+<label>纹理图分离图选取</label><input type="file" (change)="divisionFileSelect($event)">
+<br/>
+<label>纹理图名称</label><input [(ngModel)]="torigin.name" type="text">
+<br/>
+<label>纹理图描述</label><input [(ngModel)]="torigin.description" type="text">
+<br/>
+<label>纹理图备注</label><input [(ngModel)]="torigin.remark" type="text">
+<br/>
+<button type="button" (click)="upload()">Upload</button>
+<br/>
+
+
+
