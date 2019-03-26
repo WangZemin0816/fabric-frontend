@@ -1,0 +1,42 @@
+<div class="login-div">
+
+  <!--提示信息块-->
+  <div class="prompt-div border-bottom">
+    <span class="prompt-icon fa fa-coffee"></span>
+    <span>{{'login_prompt_info' | translate}}</span>
+  </div>
+
+  <!--用户名输入框-->
+  <div class="input-div input-group">
+    <i class="input-icon fa fa-user input-group-prepend"></i>
+    <input [(ngModel)]="loginForm.username" type="text" class="form-control"
+           name="username" placeholder="{{'login_username_info' | translate}}"/>
+  </div>
+
+  <!--密码输入框-->
+  <div class="input-div input-group">
+    <i class="input-icon fa fa-lock input-group-prepend"></i>
+    <input [(ngModel)]="loginForm.password" type="password" class="form-control"
+           name="password" placeholder="{{'login_password_info' | translate}}"/>
+  </div>
+
+  <!--rememberMe模块-->
+  <div class="remember-div checkbox checkbox-success">
+    <input [(ngModel)]="loginForm.rememberMe" name="rememberMe"
+           id="rememberMe" class="styled" type="checkbox"/>
+    <label for="rememberMe">{{'login_remember_me' | translate}}</label>
+  </div>
+
+
+  <!--返回错误信息的行-->
+  <div class="text-danger" style="height: 30px">{{loginErrorInfo}}</div>
+
+  <!--提交登录信息-->
+  <div class="submit-div">
+    <button (click)="loginSubmit()" type="button" class="btn btn-success btn-block" name="submit">
+      <i class="submit-icon fa fa-key"></i>
+      <span>{{'login_submit_btn' | translate}}</span>
+    </button>
+  </div>
+
+</div>

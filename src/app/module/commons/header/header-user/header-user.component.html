@@ -1,0 +1,18 @@
+<div class="current-user-div btn-group">
+
+  <!--语言切换的button,由图标,语言和下拉箭头组成-->
+  <button class="current-user-btn btn btn-default dropdown-toggle"
+          type="button" data-toggle="dropdown">
+    <span class="fa fa-globe"></span>
+    <span class="language-cur caret">{{'current_user_welcome' | translate}}{{username}}</span>
+  </button>
+
+  <!--语言切换的下拉框-->
+  <ul class="language-list dropdown-menu" role="menu" >
+    <li><button class="btn btn-block">Settings</button></li>
+    <li class="divider"></li>
+    <li><button class="btn btn-block">Profile</button></li>
+    <li class="divider"></li>
+    <li><button class="btn btn-block">Logout</button></li>
+  </ul>
+</div>

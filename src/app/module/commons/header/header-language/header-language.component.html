@@ -1,0 +1,16 @@
+<div class="language btn-group">
+
+  <!--语言切换的button,由图标,语言和下拉箭头组成-->
+  <button class="language-btn btn btn-default dropdown-toggle"
+          type="button" data-toggle="dropdown">
+    <span class="fa fa-globe"></span>
+    <span class="language-cur caret">{{'system.language' | translate}}</span>
+  </button>
+
+  <!--语言切换的下拉框-->
+  <ul class="language-list dropdown-menu" role="menu" >
+    <li><button class="btn btn-block" (click)="changeLanguage('zh_CN')">简体中文</button></li>
+    <li class="divider"></li>
+    <li><button class="btn btn-block" (click)="changeLanguage('en_US')">English</button></li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+{
+  "base_url": "http://localhost:8080",
+
+  "en_US_language": "/index?i18n_language=en_US",
+  "zh_CN_language": "/index?i18n_language=zh_CN",
+  "get_current_user": "/manager/current/user",
+  "login": "/manager/login",
+  "logout":"/manager/logout"
+}

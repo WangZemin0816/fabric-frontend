@@ -1,0 +1,16 @@
+{
+  "system_copyright": "2019 Zhejiang University",
+  "system.language": "English",
+
+  "login_title_red": "Fabric",
+  "login_title_black": "System",
+  "login_prompt_info": "Please Enter Your Information",
+  "login_username_info": "please input username",
+  "login_password_info": "please input password",
+  "login_remember_me": "RememberMe",
+  "login_submit_btn": "Login",
+  "current_user_welcome": "Welcome , ",
+
+  "header_router_texture": "Texture Simulate",
+  "header_router_pattern": "Fabric Simulate"
+}

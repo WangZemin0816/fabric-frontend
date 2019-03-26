@@ -1,0 +1,16 @@
+{
+  "system_copyright": "2019 浙江大学 版权所有",
+  "system.language": "简体中文",
+
+  "login_title_red": "织物设计",
+  "login_title_black": "系统",
+  "login_prompt_info": "请输入登陆信息",
+  "login_username_info": "请输入用户名",
+  "login_password_info": "请输入密码",
+  "login_remember_me": "记住我",
+  "login_submit_btn": "登陆",
+  "current_user_welcome": "欢迎您 , ",
+
+  "header_router_texture": "组织模拟",
+  "header_router_pattern": "织物模拟"
+}

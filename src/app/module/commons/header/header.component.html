@@ -1,0 +1,16 @@
+
+<div class="header row">
+  <!-- 头部导航栏 begin-->
+  <div class="col-md-4 offset-md-2 col-lg-4 offset-lg-1">
+    <app-header-router (routerEvent)="headerRouterEvent($event)"></app-header-router>
+  </div>
+  <!-- 中英文切换按钮下拉框 begin-->
+  <div class="col-md-4 offset-md-2 col-lg-2 offset-lg-1">
+    <app-language></app-language>
+  </div>
+  <!-- 中英文切换按钮 end-->
+  <div class="col-md-4 col-lg-2 offset-lg-1">
+    <app-header-user></app-header-user>
+  </div>
+</div>
+

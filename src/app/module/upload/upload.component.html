@@ -1,0 +1,21 @@
+<input type="file" (change)="fileSelect($event)">
+<br/>
+<input type="file" (change)="fileSelect($event)">
+<br/>
+<button type="button" (click)="uploadPattern()">Upload</button>
+<br/>
+
+<input [(ngModel)]="efile.name" type="text">
+<br/>
+<input [(ngModel)]="efile.description" type="text">
+<br/>
+<input [(ngModel)]="efile.remark" type="text">
+
+<button (click)="getAll()">getall</button>
+
+<li *ngFor="let p of patterns">
+  {{p.name}}
+  <br/>
+</li>
+
+

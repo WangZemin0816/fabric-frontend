@@ -1,0 +1,69 @@
+
+/*登录表单对应的div*/
+.login-div{
+  width: 80%;
+  margin: 20px 10% 20px 10%;
+  padding: 5% 5% 5% 5%;
+  background: whitesmoke;
+  text-align: center;
+}
+
+
+
+/*提示信息内容*/
+.prompt-div{
+  color: green;
+  font-size: large;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/*提示信息图标*/
+.prompt-icon{
+  color: green;
+  font-size: x-large;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.input-div{
+  font-size: large;
+  text-align: left;
+  margin: 30px 0 30px 0;
+}
+
+/*登录输入图标*/
+.input-icon{
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 5px;
+  font-size: x-large;
+  text-align: right;
+}
+
+/*记住我模块样式*/
+.remember-div{
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/*提交按钮模块样式*/
+.submit-div{
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/*提交按钮模块样式*/
+.submit-icon{
+  width: 10%;
+  padding-bottom:4px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+

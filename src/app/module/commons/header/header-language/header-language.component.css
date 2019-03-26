@@ -1,0 +1,27 @@
+.language{
+  width: 60%;
+}
+
+.language-btn {
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.language-cur {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.language-list {
+  text-align: center;
+  width: 100%;
+  opacity: 0.6
+}
+
+.language-item{
+  width: 100%;
+  height: 50%;
+}

@@ -1,0 +1,11 @@
+.current-user-div{
+  width: 100%;
+  color: white;
+}
+
+.current-user-btn{
+  width: 100%;
+  opacity: 0.8;
+  color: #ffffff;
+  border: white;
+}

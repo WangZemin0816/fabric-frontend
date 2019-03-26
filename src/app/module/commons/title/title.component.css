@@ -1,0 +1,22 @@
+/*标题样式*/
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Times New Roman", 仿宋, serif;
+}
+
+
+/*的图标样式*/
+.icon{
+  color: green!important;
+  padding-top: 5px;
+  margin-right:5px;
+}
+
+/*标题红色字体*/
+.red-title{
+  color: red;
+  margin-right: 10px;
+}
+

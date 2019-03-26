@@ -1,0 +1,124 @@
+/*登陆界面背景和全局字体等设置*/
+.login-layout {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Times New Roman", 宋体, serif;
+  background-image: url("/assets/images/login_bg.jpg");
+}
+
+/*登陆界面上方标题样式*/
+.login-title {
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+  padding-top: 20px;
+}
+
+/*登录界面的图标样式*/
+.ace-icon{
+  color: green!important;
+  padding-top: 5px;
+  margin-right:5px;
+}
+
+/*登录界面标题红色字体*/
+.red-title{
+  color: red;
+  margin-right: 10px;
+}
+
+/*登陆界面版权样式*/
+.copy-info{
+  width: 100%;
+  font-size: medium;
+  text-align: center;
+  padding-top: 5px;
+  color: blue;
+}
+
+/*登陆方框样式*/
+.login-box{
+  padding:20px 40px 40px 40px;
+  background: whitesmoke;
+}
+
+/*登陆提示信息样式*/
+.prompt-info{
+  color: #5cb85c;
+  width: 100%;
+  font-size: larger;
+  text-align: left;
+}
+
+/*空格样式*/
+.space-6{
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  padding: 6px 0 5px
+}
+/*空格样式*/
+.space-4{
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  padding: 4px 0 5px
+}
+
+/*空格样式*/
+.space-10{
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  padding: 10px 0 5px
+}
+/*空格样式*/
+.space-20{
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  padding: 20px 0 5px
+}
+/*空格样式*/
+.space-30{
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  padding: 30px 0 5px
+}
+
+/*表单图标样式*/
+.input-icon{
+  font-size: x-large;
+  padding-top: 5px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+/*提交按钮图标样式*/
+.submit-icon{
+  color: white;
+}
+
+/*记住我模块样式*/
+.remember-div{
+  width: 50%;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+/*提交按钮模块样式*/
+.submit-div{
+  width: 50%;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+/*提交按钮样式*/
+.submit-btn{
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: bottom;
+}
+

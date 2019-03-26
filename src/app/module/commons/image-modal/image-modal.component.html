@@ -1,0 +1,24 @@
+<!-- 选择设计图对话框，需要在网页服务器初始化designImageFileList并放入堆栈值中-->
+<div class="modal fade" id="selectDesignImageModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">选择图片</h4>
+      </div>
+      <div class="modal-body">
+
+        <!--<s:iterator id = "filePath" value="designImageFileList">-->
+          <!--<img src="<s:if test="#filePath!=null"><s:property/></s:if>"-->
+          <!--class="img-rounded" onClick="clickDesignImage(this)" style="width: 120px; height: 120px;">-->
+        <!--</s:iterator>-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default"
+                onClick="hideModelDialog('selectDesignImageModal')">取消</button>
+        <button type="button" class="btn btn-primary"
+                onClick="sureDesignImage()">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
