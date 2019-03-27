@@ -1,3 +1,4 @@
 <app-image-modal [fileService]="this.textureService" (selectImgEvent)="setTexture($event)"></app-image-modal>
 <button></button>
-<img *ngIf="textureImage!=null" [src]="textureService.getAbsUrl(textureImage.url)">
+<img *ngIf="torigin!=null" [src]="textureService.getAbsUrl(torigin.url)">
+<img *ngIf="torigin!=null" [src]="textureService.getAbsUrl(tdivision.url)">

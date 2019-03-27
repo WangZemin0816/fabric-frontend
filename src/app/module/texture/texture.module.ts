@@ -5,7 +5,9 @@ import {TextureRoutingModule} from './texture-routing.module';
 import {CommonsModule} from '../commons/commons.module';
 
 @NgModule({
-  declarations: [TextureComponent],
+  declarations: [
+    TextureComponent
+  ],
   imports: [
     CommonModule,
     CommonsModule,

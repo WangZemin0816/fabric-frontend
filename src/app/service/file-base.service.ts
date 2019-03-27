@@ -1,4 +1,4 @@
-import {Injectable, Injector} from '@angular/core';
+import {Injectable, Injector, Pipe, PipeTransform} from '@angular/core';
 import {HttpRequestService} from './http-request.service';
 
 @Injectable({

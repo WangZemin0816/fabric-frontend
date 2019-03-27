@@ -12,7 +12,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {UploadModule} from './module/upload/upload.module';
 import {TextureModule} from './module/texture/texture.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
